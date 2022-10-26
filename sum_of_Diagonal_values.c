@@ -31,24 +31,26 @@ int main()
     else
     {
         for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<m;j++)
         {
-            for(int j=0;j<m;j++)
-            {
-                scanf("%d",&a[i][j]);
-            }
+            scanf("%d",&a[i][j]);
         }
-        for(int i=0;i<n;i++)
+    }
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<m;j++)
         {
-            for(int j=0;j<m;j++)
-            {
-                if(i==j)
-                sum=sum+a[i][j];
-            }
+            if(i==j)
+            sum=sum+a[i][j];
         }
-        for(int i=0;i<n;i++)
-        {
+    }
+    for(int i=0;i<n;i++)
+    {
+        
             sum1=sum1+a[i][n-i-1];
-        }
-        printf("%d",sum+sum1);
+        
+    }
+    printf("%d",sum+sum1);
     }
 }
