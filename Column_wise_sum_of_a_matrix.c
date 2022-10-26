@@ -10,7 +10,6 @@ int main()
             scanf("%d",&a[i][j]);
         }
     }
-   
     for(int j=0;j<m;j++)
     {  int s=0;
         for(int i=0;i<n;i++)
