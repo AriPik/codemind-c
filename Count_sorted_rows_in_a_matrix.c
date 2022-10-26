@@ -11,8 +11,7 @@ int main()
         }
     }
     for(i=0;i<n;i++)
-    {
-        int k=0;
+    {int k=0;
         for(j=0;j<m-1;j++)
         {
             if(a[i][j]<a[i][j+1])
@@ -22,8 +21,7 @@ int main()
         c++;
     }
     for(i=0;i<n;i++)
-    {
-        int k=0;
+    {int k=0;
         for(j=0;j<m-1;j++)
         {
             if(a[i][j]>a[i][j+1])
